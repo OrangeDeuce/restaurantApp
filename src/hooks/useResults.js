@@ -11,7 +11,7 @@ export default () => {
         params: {
           limit: 46,
           term: searchTerm,
-          location: "morton grove",
+          location: "skokie",
         },
       });
       setResults(response.data.businesses);
@@ -22,7 +22,7 @@ export default () => {
   };
 
   useEffect(() => {
-    searchApi("ethiopian");
+    searchApi("thai");
   }, []);
 
   return [searchApi, results, errorMessage];
