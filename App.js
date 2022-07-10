@@ -4,10 +4,12 @@ import { createStackNavigator } from "react-navigation-stack";
 
 //import the SearchScreen.js screen
 import SearchScreen from "./src/screens/SearchScreen";
+import ResultsShowScreen from "./src/screens/ResultsShowScreen";
 // create navigator object:
 const navigator = createStackNavigator(
   {
     Search: SearchScreen, //This is the 'Search' key which references the SearchScreen.js screen (Name this appropriately)
+    Results: ResultsShowScreen,
   },
   {
     initialRouteName: "Search", //Which screen to show on every startup
